@@ -28,4 +28,9 @@ module.exports = ({ sourceDir, distDir }) => ({
     }),
     new HotModulePlugin(),
   ],
+	devServer: {
+    compress: true,
+    disableHostCheck: true,   // That solved it
+
+ } 
 });
